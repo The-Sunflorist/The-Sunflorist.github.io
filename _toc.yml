@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: docs/a_sunflower_to_you/a_sunflower_to_you
+- file: 'docs/a_sunflower_to_you/00_a_sunflower_to_you'
   sections:
-  - file: docs/a_sunflower_to_you/sunflorist
-  - file: docs/a_sunflower_to_you/sunshine_cell
+  - file: 'docs/a_sunflower_to_you/2024-06-20_sunflorist'
+  - file: 'docs/a_sunflower_to_you/2024-06-22_sunshine_cell'
