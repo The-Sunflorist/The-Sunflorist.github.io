@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: docs/a_sunflower_to_you/a_sunflower_to_you
+  sections:
+  - file: docs/a_sunflower_to_you/sunflorist
+  - file: docs/a_sunflower_to_you/sunshine_cell
