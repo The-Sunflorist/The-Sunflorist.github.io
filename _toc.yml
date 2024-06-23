@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: 'docs/intro'
 chapters:
 - file: 'docs/a_sunflower_to_you/00_a_sunflower_to_you'
   sections:
