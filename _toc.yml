@@ -2,9 +2,6 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: 'docs/intro'
+root: 'docs/00_intro'
 chapters:
-- file: 'docs/a_sunflower_to_you/00_a_sunflower_to_you'
-  sections:
-  - file: 'docs/a_sunflower_to_you/2024-06-20_sunflorist'
-  - file: 'docs/a_sunflower_to_you/2024-06-22_sunshine_cell'
+- file: 'docs/01_a_sunflower_to_you'
