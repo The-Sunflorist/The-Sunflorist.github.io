@@ -16,4 +16,4 @@ execute:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: ''
-  extra_footer: '向阳花花农原创作品，版权所有。'
+  extra_footer: 向阳花花农原创作品，版权所有。个人免费收藏欣赏，分享转载请注明原作者，禁止用于任何盈利活动。

@@ -2,6 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: 'docs/00_intro'
+root: docs/00_intro
+options:
+  numbered: True
 chapters:
-- file: 'docs/01_a_sunflower_to_you'
+- file: docs/01_a_sunflower_to_you
