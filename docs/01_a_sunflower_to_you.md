@@ -16,25 +16,25 @@
 
 ## Sunflorist
 
-`2024-06-20`
+`2024-07-17`
 
 I grow sunflowers
 
-Out of joy and zest,
+Out of passion,
 
 Like marrying an ordinary thing
 
-With no one's consent.
+With no one's permission.
 
 ## 阳光电池
 
-`2024-06-22`
+`2024-07-17`
 
 像一块太阳能电池，
 
 在晴朗的天气蓄满阳光。
 
-那阳光普照晦暗时的心田，
+那阳光普照晦暗心田，
 
 有朵朵心花怒放。
 
@@ -46,6 +46,6 @@ Like a solar cell,
 
 Store sunshine up,
 
-That brightens the day,
+That can brighten the day,
 
 If it gets dark.
