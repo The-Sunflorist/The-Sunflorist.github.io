@@ -4,6 +4,6 @@
 format: jb-book
 root: docs/00_intro
 options:
-  numbered: True
+  numbered: 2
 chapters:
 - file: docs/01_a_sunflower_to_you

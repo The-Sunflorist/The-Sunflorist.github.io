@@ -2,9 +2,11 @@
 
 向阳花花农的第一部诗画集。
 
-## 向阳花花农
+## 向阳花花农「The Sunflorist」
 
-`2024-06-20`
+> 最近一次修订文字内容于2024-07-22
+
+### 向阳花花农
 
 因为喜欢，
 
@@ -14,9 +16,7 @@
 
 私定终身。
 
-## Sunflorist
-
-`2024-07-17`
+### The Sunflorist
 
 I grow sunflowers
 
@@ -24,11 +24,13 @@ Out of passion,
 
 Like marrying an ordinary thing
 
-With no one's permission.
+With our own permission.
 
-## 阳光电池
+## 阳光电池「Sunshine Cell」
 
-`2024-07-17`
+> 最近一次修订文字内容于2024-07-17
+
+### 阳光电池
 
 像一块太阳能电池，
 
@@ -38,9 +40,7 @@ With no one's permission.
 
 有朵朵心花怒放。
 
-## Sunshine Cell
-
-`2024-06-22`
+### Sunshine Cell
 
 Like a solar cell,
 
