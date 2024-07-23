@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: 向阳花花农的诗画集
-author: 向阳花花农
+title: 向阳花花农的花海
+author: 向阳花花农 The Sunflorist
 copyright: '2024'
 logo: ''
 only_build_toc_files: true
@@ -16,4 +16,4 @@ execute:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: ''
-  extra_footer: 向阳花花农原创作品，版权所有。个人免费收藏欣赏。分享转载请注明原作者。未经许可不得用于任何商业盈利活动。Sunflorist's original. All rights reserved. Free for personal collection and appreciation. Please indicate the original author while sharing. Shall not be used for any commercial profit-making activity without permission. 
+  extra_footer: 向阳花花农原创作品，保留所有版权，商用授权请联系<code>the.sunflorist@foxmail.com</code>。</br>The Sunflorist's originals. All rights reserved. For commercial authorization, please contact <code>the.sunflorist@foxmail.com</code>.
