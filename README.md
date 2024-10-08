@@ -36,10 +36,19 @@ jb build .
 jb build --all .
 ```
 
+🧹 如需清除所有构建：
+
 ```shell
-# 清除所有构建。
 jb clean .
 ```
+
+🕸️ 每次构建后，将构建好的网页提交到GitHub远程仓库的`gh-pages`分支：
+
+```shell
+ghp-import -n -p -f _build/html
+```
+
+🔗 首次提交后，在该仓库的设置中打开Pages服务，Source选择`Deploy from a branch`，Branch选择`gh-pages`分支下的`/ (root)`目录。等待GitHub完成部署后，通过[https://the-sunflorist.github.io](https://the-sunflorist.github.io)即可访问向阳花花农的个人网站。
 
 ⌨️ 更新本地仓库的`main`分支：
 
@@ -59,11 +68,3 @@ git push -u origin main
 # 非首次提交。
 git push
 ```
-
-🕸️ 每次构建后，将构建好的网页提交到GitHub远程仓库的`gh-pages`分支：
-
-```shell
-ghp-import -n -p -f _build/html
-```
-
-🔗 首次提交后，在该仓库的设置中打开Pages服务，Source选择`Deploy from a branch`，Branch选择`gh-pages`分支下的`/ (root)`目录。等待GitHub完成部署后，通过[https://the-sunflorist.github.io](https://the-sunflorist.github.io)即可访问向阳花花农的个人网站。
