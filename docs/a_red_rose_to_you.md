@@ -46,12 +46,12 @@ And I said, "I love you, too!"
 Every single time
 I prepared a gift for you,
 You worried about the price,
-But I knew you were happy.
+But I knew you liked it.
 And I said, "I love you, too!"
 
 The last time,
 After I kissed your wrinkled forehead,
-You told me to take good care of myself.
+You told me not to be sad.
 And I said, "I love you, too!"
 ```
 
