@@ -55,4 +55,4 @@ You told me not to be sad.
 And I said, "I love you, too!"
 ```
 
-🌼 余香：“我爱你！”藏在每个动作、每句没有明说的话里。
+🌼 余香：“我爱你！”藏在每个动作、每个表情和每句没有明说的话里。
