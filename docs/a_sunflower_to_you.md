@@ -37,3 +37,37 @@ And ashed his spirit.
 ```
 
 🌼 余香：选择做喜欢的事，是勇敢的；能够从喜欢的事中获得安全感，是幸运的。希望每个人都勇敢而幸运着。
+
+## 阳光电池
+
+*Sunshine Cell*
+
+```text
+他有一块太阳能电池，
+里面蓄满了阳春三月的晨光、
+南方海滩的艳阳、
+破茧成蝶的豁亮
+和儿时梦想的星芒。
+
+当这块电池释放能量，
+那会是消融寒冬的热量、
+压垮磨难的重量、
+振聋发聩的音量
+和打败绝望的力量。
+```
+
+```text
+He has a solar cell,
+In which stores up the dawn of spring,
+The sunshine on a southern beach,
+The first light a butterfly sees,
+And the twinkle of his childhood dreams.
+
+Once the cell releases its energy,
+That will be the heat to melt winters,
+The weight to crush barriers,
+The sound to awaken strayers,
+And the power to defeat despairs.
+```
+
+🌼 余香：2022年电视剧《[나의 해방일지](https://www.imdb.com/title/tt15146130)》（《[我的解放日志](https://movie.douban.com/subject/35322421)》）第02集03:40，廉美贞和同事之间的对话。“要是冬天快点来就好了。”“到了冬天肯定又要说：‘赶紧到夏天吧。’记住现在的心情，等到冬天冷的时候再用吧。好好保存到冬天。”“那现在用冬天的记忆不就好了吗？有没有天冷时保留的回忆啊？”
