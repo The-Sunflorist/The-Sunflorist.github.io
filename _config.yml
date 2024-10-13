@@ -7,13 +7,20 @@ copyright: '2024'
 logo: ''
 only_build_toc_files: true
 
-# Force re-execution of notebooks on each build.
+# Force re-execution of notebooks on each build
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+
+# Parse and render settings
+parse:
+  # See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+  myst_enable_extensions:
+    - fieldlist
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: ''
+  announcement: 向阳花花农原创作品，保留所有版权。The Sunflorist's originals. All rights reserved.
   extra_footer: 向阳花花农原创作品，保留所有版权。The Sunflorist's originals. All rights reserved.
