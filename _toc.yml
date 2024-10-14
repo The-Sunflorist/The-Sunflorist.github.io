@@ -6,7 +6,7 @@ root: docs/home
 options:
   numbered: 2
 chapters:
-- file: docs/a_morning_glory_to_you
-- file: docs/a_sunflower_to_you
-- file: docs/a_red_rose_to_you
-- file: docs/a_lotus_flower_to_you
+- file: docs/a_morning_glory_for_you
+- file: docs/a_sunflower_for_you
+- file: docs/a_red_rose_for_you
+- file: docs/a_lotus_flower_for_you

@@ -1,6 +1,6 @@
 # 使用Jupyter Book搭建个人网站
 
-⚙️ 新建一个名为`latest`的[conda](https://docs.anaconda.com/miniconda/)环境，在其中安装最新版本的Python；激活该环境后，更新`pip`；使用`pip`在其中安装`jupyter-book`和`ghp-import`两个Python包：
+🐍 新建一个名为`latest`的[conda](https://docs.anaconda.com/miniconda/)环境，在其中安装最新版本的Python；激活该环境后，更新`pip`；使用`pip`在其中安装`jupyter-book`和`ghp-import`两个Python包：
 
 ```shell
 conda create -n latest python -y
@@ -24,7 +24,7 @@ git init
 git remote add origin https://github.com/The-Sunflorist/The-Sunflorist.github.io.git
 ```
 
-🔧 修改`_config.yml`和`_toc.yml`文件的内容，删除不需要的文件，添加新的Markdown文件（[MyST语法小抄](https://jupyterbook.org/en/stable/reference/cheatsheet.html)）；添加`.gitignore`文件，在其中添加`_build/`和其它不需要在`main`分支中进行版本管理的文件夹和文件；重新组织内容文档的文件目录结构。每当本地仓库`main`分支中的内容可以发布时，在本地构建Jupyter Book以生成`.html`等网页文件：
+🏗️ 修改`_config.yml`和`_toc.yml`文件的内容，删除不需要的文件，添加新的Markdown文件（[MyST语法小抄](https://jupyterbook.org/en/stable/reference/cheatsheet.html)）；添加`.gitignore`文件，在其中添加`_build/`和其它不需要在`main`分支中进行版本管理的文件夹和文件；重新组织内容文档的文件目录结构。每当本地仓库`main`分支中的内容可以发布时，在本地构建Jupyter Book以生成`.html`等网页文件：
 
 ```shell
 # 只重新构建有修改的文件。
@@ -48,16 +48,16 @@ jb clean .
 ghp-import -n -p -f _build/html
 ```
 
-🔗 首次提交`gh-pages`分支后，在GitHub远程仓库的设置中打开Pages服务，Source选择`Deploy from a branch`，Branch选择`gh-pages`分支下的`/ (root)`目录。等待GitHub完成部署后，通过[https://the-sunflorist.github.io](https://the-sunflorist.github.io)即可访问个人网站。
+🚀 首次提交`gh-pages`分支后，在GitHub远程仓库的设置中打开Pages服务，Source选择`Deploy from a branch`，Branch选择`gh-pages`分支下的`/ (root)`目录。等待GitHub完成部署后，通过[https://the-sunflorist.github.io](https://the-sunflorist.github.io)即可访问个人网站。
 
-⌨️ 每次修改文档内容后，更新本地仓库的`main`分支：
+🗃️ 每次修改文档内容后，更新本地仓库的`main`分支：
 
 ```shell
 git add .
 git cm 'update something'
 ```
 
-🧑‍💻 每次更新本地仓库的`main`分支后，或者多次更新后，将其提交到GitHub远程仓库的`main`分支：
+☁️ 每次更新本地仓库的`main`分支后，或者多次更新后，将其提交到GitHub远程仓库的`main`分支：
 
 ```shell
 # 首次提交。

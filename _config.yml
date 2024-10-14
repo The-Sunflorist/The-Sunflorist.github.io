@@ -18,9 +18,12 @@ parse:
   myst_enable_extensions:
     - fieldlist
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: ''
-  announcement: 向阳花花农原创作品，保留所有版权。The Sunflorist's originals. All rights reserved.
+  announcement: 该网页使用<a href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>进行搭建🏗️ 使用<a href="https://pages.github.com">GitHub Pages</a>完成部署和发布🚀
   extra_footer: 向阳花花农原创作品，保留所有版权。The Sunflorist's originals. All rights reserved.
+
+# See https://jupyterbook.org/en/stable/advanced/sphinx.html
+sphinx:
+  config:
+    language: zh
