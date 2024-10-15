@@ -19,7 +19,7 @@ parse:
     - fieldlist
 
 html:
-  favicon: ''
+  favicon: 'images/Van_Gogh_Moon_200.png'
   announcement: 该网页使用<a href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>进行搭建🏗️ 使用<a href="https://pages.github.com">GitHub Pages</a>完成部署和发布🚀
   extra_footer: 向阳花花农原创作品，保留所有版权。The Sunflorist's originals. All rights reserved.
 

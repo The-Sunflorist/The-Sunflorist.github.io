@@ -59,8 +59,6 @@ And I said, "I love you, too!"
 
 ***Happily Ever After***
 
-城堡，恶魔，白马，精灵
-
 ---
 
 > 🌼 余香：从童话故事的结尾开始，续写另一个童话故事。
