@@ -1,6 +1,6 @@
 # 向阳花花农的花海
 
-*The Sunflorist's Ocean of Flowers*
+***The Sunflorist's Ocean of Flowers***
 
 很久很久以前，在一个很远很远的地方，生活着一个无忧无虑的小男孩。他每天都会躺在大草原上，出神地望着那些淘气的云朵，想象它们是太阳牧放的羊群，或是月亮定制的婚纱。
 
@@ -18,19 +18,19 @@
 
 ## 寻找向阳花花农
 
-*Where Is The Sunflorist?*
+***Where Is The Sunflorist?***
 
-- ✉️ 邮箱：`the.sunflorist@foxmail.com`
-- 🌻 主页：[向阳花花农的花海](https://the-sunflorist.github.io)
-- 🎵 网易云音乐：[向阳花花农](https://y.music.163.com/m/user?id=12516158481)
-- 🅱️ 哔哩哔哩：[向阳花花农](https://b23.tv/LYPNKUD)
-- 📕 小红书：[向阳花花农](https://www.xiaohongshu.com/user/profile/64e87c4d0000000001007b8c)
-- 🫨 抖音：[向阳花花农](https://v.douyin.com/irjwwk7E)
-- 🖐️ 快手：[向阳花花农](https://v.kuaishou.com/PBJYYy)
+:✉️ 邮箱: `the.sunflorist@foxmail.com`
+:🌻 主页: [向阳花花农的花海](https://the-sunflorist.github.io)
+:🎵 网易云音乐: [向阳花花农](https://y.music.163.com/m/user?id=12516158481)
+:🅱️ 哔哩哔哩: [向阳花花农](https://b23.tv/LYPNKUD)
+:📕 小红书: [向阳花花农](https://www.xiaohongshu.com/user/profile/64e87c4d0000000001007b8c)
+:🫨 抖音: [向阳花花农](https://v.douyin.com/irjwwk7E)
+:🖐️ 快手: [向阳花花农](https://v.kuaishou.com/PBJYYy)
 
 ## 向花海启航
 
-*Set Sail into the Ocean of Flowers*
+***Set Sail into the Ocean of Flowers***
 
 ```{tableofcontents}
 ```
