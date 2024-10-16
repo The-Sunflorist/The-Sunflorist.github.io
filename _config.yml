@@ -2,9 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: 向阳花花农的花海
-author: 向阳花花农 The Sunflorist <code>the.sunflorist@foxmail.com</code>
+author: 向阳花花农 The Sunflorist</br><code>the.sunflorist@foxmail.com</code>
 copyright: '2024'
-logo: ''
+logo: 'images/Van_Gogh_Fields_960x270.png'
 only_build_toc_files: true
 
 # Force re-execution of notebooks on each build
@@ -19,9 +19,9 @@ parse:
     - fieldlist
 
 html:
-  favicon: 'images/Van_Gogh_Moon_200.png'
+  favicon: 'images/Van_Gogh_Moon_200x200.png'
   announcement: 该网页使用<a href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>进行搭建🏗️ 使用<a href="https://pages.github.com">GitHub Pages</a>完成部署和发布🚀
-  extra_footer: 向阳花花农原创作品，保留所有版权。The Sunflorist's originals. All rights reserved.
+  extra_footer: 向阳花花农原创作品，保留所有版权。</br>The Sunflorist's originals. All rights reserved.
 
 # See https://jupyterbook.org/en/stable/advanced/sphinx.html
 sphinx:
