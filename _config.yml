@@ -1,0 +1,28 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: 向阳花花农的花海
+author: 向阳花花农
+logo: 'imgs/Sun_Stamped.png'
+only_build_toc_files: true
+
+# Force re-execution of notebooks on each build
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Parse and render settings
+parse:
+  # See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+  myst_enable_extensions:
+    - html_image
+
+html:
+  favicon: 'imgs/Sun_100x100.png'
+  announcement: 该网页使用<a href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>和<a href="https://github.com/pradyunsg/furo">Furo</a>进行搭建🏗️ 使用<a href="https://pages.github.com">GitHub Pages</a>完成部署和发布🚀
+
+# See https://jupyterbook.org/en/stable/advanced/sphinx.html
+sphinx:
+  config:
+    html_theme: furo
+    language: zh
