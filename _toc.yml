@@ -5,3 +5,5 @@ format: jb-book
 root: docs/home
 options:
   numbered: 2
+chapters:
+- file: docs/sunflower
