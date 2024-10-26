@@ -7,3 +7,4 @@ options:
   numbered: 2
 chapters:
 - file: docs/sunflower
+- file: docs/morning_glory
