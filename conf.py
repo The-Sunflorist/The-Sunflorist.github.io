@@ -43,7 +43,7 @@ extensions = [
 today_fmt = '%Y-%m-%d %H:%M:%S UTC %z'
 
 templates_path = ['_templates']
-exclude_patterns = ['.DS_Store', '.idea', '.tmp', '_static', '_templates', 'aux', 'imgs', 'src', 'README.md']
+exclude_patterns = ['.DS_Store', '.idea', '.tmp', '_static', '_templates', 'aux', '_images', 'src', 'README.md']
 
 language = 'zh_CN'
 gettext_compact = False

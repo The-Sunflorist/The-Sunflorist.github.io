@@ -228,16 +228,3 @@ sudo launchctl config user path "$HOME/bin:$PATH"
 # 使用latexmk的-silent选项减少终端的输出
 make latexpdf LATEXMKOPTS="-silent"
 ```
-
-## <i class="em-svg em-sunny" aria-role="presentation" aria-label="BLACK SUN WITH RAYS"></i> 7. 封面
-
-***Covers***
-
-> 需要 `aux/OpenMoji/`， `aux/Seal.png`， `aux/Sun.png`。
-
-强制重新生成最后一组社交平台上的视频封面，打开[ImageOptim](https://imageoptim.com)压缩生成的封面：
-
-```shell
-# 查看帮助：python src/cover_maker.py -h
-python src/cover_maker.py -cf
-```

@@ -32,17 +32,15 @@ class Replacer:
             r'\s*<div class="copyright">(.|\n)*?Furo</a>',
             open(file=os.path.join(project_path, 'aux', 'copyright.html'), mode='r', encoding='utf-8')
             .read().replace('{{year}}', f'{__now.year}')
-            .replace('{{date}}', re.sub(
-                r'(\d{2})(\d{2})$', repl=r'\1:\2', string=__now.strftime(format='%Y-%m-%d %H:%M:%S UTC %z'),
-            )),
+            .replace('{{date}}', __now.strftime(format='%Y-%m-%d %H:%M:%S UTC %:z')),
         ),
         'previous': (
             r'<span>Previous</span>',
-            r'<span><i class="em-svg em-fallen_leaf" aria-role="presentation" aria-label="FALLEN LEAF"></i>上一叶</span>',
+            r'<span><i class="em-svg em-fallen_leaf" aria-role="presentation" aria-label="FALLEN LEAF"></i> 上一叶</span>',
         ),
         'next': (
             r'<span>Next</span>',
-            r'<span>下一叶<i class="em-svg em-leaves" aria-role="presentation" '
+            r'<span>下一叶 <i class="em-svg em-leaves" aria-role="presentation" '
             r'aria-label="LEAF FLUTTERING IN WIND"></i></span>',
         ),
         'back_to_top': (r'<span>Back to top</span>', r'<span>返回顶部</span>'),
