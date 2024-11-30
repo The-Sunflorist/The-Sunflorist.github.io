@@ -13,8 +13,6 @@
 import sys
 from datetime import datetime
 
-project_path = sys.path[0]
-
 # project information
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -81,7 +79,7 @@ html_theme_options = {
 html_favicon = '_static/Sun_100x100.png'
 
 # https://dailystuff.nl/blog/2023/adding-google-analytics-in-sphinx
-googleanalytics_id = 'G-J355ELCH1B' if 'readthedocs' in project_path else 'G-GVGCSPC1K4'
+googleanalytics_id = 'G-J355ELCH1B' if 'readthedocs' in sys.path[0] else 'G-GVGCSPC1K4'
 
 # todo: EPUB options
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-epub-output

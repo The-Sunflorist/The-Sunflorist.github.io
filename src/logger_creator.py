@@ -10,7 +10,6 @@
 
 
 import os
-import sys
 from datetime import datetime
 from logging import (
     CRITICAL, DEBUG, ERROR, FileHandler, Formatter, getLogger,
@@ -19,8 +18,6 @@ from logging import (
 from warnings import warn
 
 from sty import fg, rs
-
-project_path = os.path.abspath(path=os.path.join(sys.path[0], '..'))
 
 
 class ColoredFormatter(Formatter):
@@ -79,7 +76,7 @@ class LoggerCreator:
             name: str,
             level: int = DEBUG,
             to_console: bool = True,
-            log_folder_path: str | None = os.path.join(project_path, '.tmp', '_logs'),
+            log_folder_path: str | None = os.path.join('.tmp', '_logs'),
     ) -> ColoredLogger:
         """Create a logger.
 
