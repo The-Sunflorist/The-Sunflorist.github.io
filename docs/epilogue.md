@@ -8,7 +8,7 @@
 > 缘溪行，忘路之远近。忽逢桃花林，夹岸数百步，中无杂树，芳草鲜美，落英缤纷。复行数十步，豁然开朗。土地平旷，屋舍<ruby>俨<rt>yǎn</rt></ruby>然，有良田、美池、桑竹之属。<ruby>阡<rt>qiān</rt></ruby>陌交通，鸡犬相闻。黄发垂<ruby>髫<rt>tiáo</rt></ruby>，怡然自乐。来此绝境，停数日，辞去，不复得路。
 > <p class="attribution">——【东晋】陶渊明《<a href="https://hanyu.baidu.com/shici/detail?pid=f3f889357df84af681cfc55098ced685">桃花源记</a>》（节选）</p>
 
-<img src="../_images/Grapes.png" alt="Grapes" class="bg-transparent align-center">
+![Grapes](../_images/grapes.png)
 
 ## 相逢何必曾相识[^meet]
 

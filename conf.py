@@ -72,11 +72,11 @@ html_static_path = ['_static']
 html_theme_options = {
     'announcement': r'<i class="em-svg em-tada" aria-role="presentation" '
                     r'aria-label="PARTY POPPER"></i> Bravo! 恭喜你觅得一处桃花源！',
-    'light_logo': 'Sun_Light_500x500.gif',
-    'dark_logo': 'Sun_Dark_500x500.gif',
+    'light_logo': 'sun_light_500x500.gif',
+    'dark_logo': 'sun_dark_500x500.gif',
     'top_of_page_buttons': [],
 }
-html_favicon = '_static/Sun_100x100.png'
+html_favicon = '_static/sun_100x100.png'
 
 # https://dailystuff.nl/blog/2023/adding-google-analytics-in-sphinx
 googleanalytics_id = 'G-J355ELCH1B' if 'readthedocs' in sys.path[0] else 'G-GVGCSPC1K4'

@@ -5,4 +5,4 @@
 
 ***An Azalea for You***
 
-<img src="../_images/Gingko_Leaf.png" alt="Gingko_Leaf" class="bg-transparent align-center">
+![Gingko Leaf](../_images/gingko_Leaf.png)
