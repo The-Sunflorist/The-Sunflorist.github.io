@@ -59,10 +59,6 @@ class Replacer:
             'aria-label="TWO HEARTS"></i> 有心栽花</span>',
         ),
         'home': (r'<div class="title">Home</div>', r'<div class="title">向阳花花农的花海</div>'),
-        'meta': (
-            r'<head>',
-            f'<head>\n{open(file=os.path.join('aux', 'meta.html'), mode='r', encoding='utf-8').read()}',
-        ),
     }
 
     @classmethod

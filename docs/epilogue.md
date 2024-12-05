@@ -5,8 +5,8 @@
 
 ***Outside the Event Horizon of The Sunflorist's Shangri-La***
 
+{attribution="—【东晋】陶渊明《[桃花源记](https://hanyu.baidu.com/shici/detail?pid=f3f889357df84af681cfc55098ced685)》（节选）"}
 > 缘溪行，忘路之远近。忽逢桃花林，夹岸数百步，中无杂树，芳草鲜美，落英缤纷。复行数十步，豁然开朗。土地平旷，屋舍<ruby>俨<rt>yǎn</rt></ruby>然，有良田、美池、桑竹之属。<ruby>阡<rt>qiān</rt></ruby>陌交通，鸡犬相闻。黄发垂<ruby>髫<rt>tiáo</rt></ruby>，怡然自乐。来此绝境，停数日，辞去，不复得路。
-> <p class="attribution">——【东晋】陶渊明《<a href="https://hanyu.baidu.com/shici/detail?pid=f3f889357df84af681cfc55098ced685">桃花源记</a>》（节选）</p>
 
 ![Grapes](../_images/grapes.png)
 
@@ -26,7 +26,7 @@
 
 ***Where Is The Sunflorist?***
 
-- <i class="em-svg em-e-mail" aria-role="presentation" aria-label="E-MAIL SYMBOL"></i>️ 邮箱： `the.sunflorist@foxmail.com`
+- <i class="em-svg em-e-mail" aria-role="presentation" aria-label="E-MAIL SYMBOL"></i>️ 邮箱： [`the.sunflorist@foxmail.com`](mailto:the.sunflorist@foxmail.com)
 - <i class="em-svg em-octopus" aria-role="presentation" aria-label="OCTOPUS"></i> GitHub Pages：[向阳花花农的花海](https://the-sunflorist.github.io)（大陆访问该网址有时较慢）
 - <i class="em-svg em-page_facing_up" aria-role="presentation" aria-label="PAGE FACING UP"></i> Read the Docs：[向阳花花农的花海](https://the-sunflorist.readthedocs.io)（同GitHub Pages内容一致）
 - <i class="em-svg em-gorilla" aria-role="presentation" aria-label="GORILLA"></i> CSDN：[向阳花花农](https://blog.csdn.net/The_Sunflorist)
@@ -59,6 +59,6 @@
 
 ***Ask and Be Aware***
 
-<i class="em-svg em-handshake" aria-role="presentation" aria-label="HANDSHAKE"></i> 向阳花花农对共赢的商业合作持积极开放的态度，不认同任何违反《[中华人民共和国著作权法](https://www.gov.cn/guoqing/2021-10/29/content_5647633.htm)》的行为。
+<i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》包括由向阳花花农创作的诗歌、歌词、翻译、数字绘画等作品，不包括该网页所使用的[Furo](https://github.com/pradyunsg/furo)主题、[Twemoji](https://github.com/twitter/twemoji)表情包等非向阳花花农创作的内容。
 
-<i class="em-svg em-lion_face" aria-role="presentation" aria-label="LION FACE"></i> 该网页的搜索框无法准确地搜索中文字符，但能够较为准确地搜索英文字符，这是Sphinx在目前的局限性之一。
+<i class="em-svg em-handshake" aria-role="presentation" aria-label="HANDSHAKE"></i> 向阳花花农对共赢的商业合作持积极开放的态度，不认同任何违反《[中华人民共和国著作权法](https://www.gov.cn/guoqing/2021-10/29/content_5647633.htm)》的行为。

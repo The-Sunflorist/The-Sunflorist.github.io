@@ -15,6 +15,9 @@
 
 <!-- 广州 2024-10-23 -->
 
+`````{tab-set}
+
+````{tab-item} {{ zh }}
 ```{line-block}
 第一次，
 我正忘乎所以地谈天说地，
@@ -37,9 +40,9 @@
 你叮嘱我要照顾好自己。
 而我说：“我也爱你！”
 ```
+````
 
----
-
+````{tab-item} {{ en }}
 ```{line-block}
 At the very first time,
 I was talking a lot with enthusiasm,
@@ -54,8 +57,7 @@ And I said, "I love you, too!"
 
 Every single time
 I prepared a gift for you,
-You worried about the price,
-But I knew you liked it.
+You said it's costly, but you liked it.
 And I said, "I love you, too!"
 
 For the last time,
@@ -63,6 +65,9 @@ I kissed your wrinkled forehead,
 When you told me not to be sad.
 And I said, "I love you, too!"
 ```
+````
+
+`````
 
 > {{ more }}
 >
@@ -74,6 +79,9 @@ And I said, "I love you, too!"
 
 <!-- 广州 2024-10-25 -->
 
+`````{tab-set}
+
+````{tab-item} {{ zh }}
 ```{line-block}
 当我们三十多岁，
 在周六晚上，我们相互依偎，
@@ -112,9 +120,9 @@ And I said, "I love you, too!"
 ```
 
 [^slow]: “就像从前，车、马、邮件都慢”出自木心的诗歌《[从前慢](https://baike.baidu.com/item/从前慢/17158480)》第三小节。
+````
 
----
-
+````{tab-item} {{ en }}
 ```{line-block}
 In our thirties,
 We snuggled up to each other on Saturday nights,
@@ -151,6 +159,9 @@ The end of our fairy tale was engraved on our wrinkles:
 We've enjoyed the happiest ever life,
 Which we've been sharing since our twenties.
 ```
+````
+
+`````
 
 > {{ more }}
 >
