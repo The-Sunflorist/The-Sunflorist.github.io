@@ -23,7 +23,7 @@ on_read_the_docs = 'readthedocs' in sys.path[0]
 project = '向阳花花农的花海'
 author = '向阳花花农'
 copyright = (
-    f'《向阳花花农的花海》 © {now.year} 由向阳花花农创作，遵循CC BY-NC-SA 4.0协议，保留所有版权。\n'
+    f'《向阳花花农的花海》© {now.year} 由向阳花花农创作，遵循CC BY-NC-SA 4.0协议，保留所有版权。'
     "The Sunflorist's Shangri-La © 2024 by The Sunflorist is licensed under CC BY-NC-SA 4.0, all rights reserved."
 )
 project_copyright = copyright

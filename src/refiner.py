@@ -117,6 +117,20 @@ class Remover:
             logger.yellow(f'Removed {os.path.relpath(path=filepath)}')
 
 
+# class Decoder:
+#     """Decode some file encoded with raw_unicode_escape
+#     """
+#
+#     @staticmethod
+#     def decode(filepaths: list[str]) -> None:
+#         for filepath in filepaths:
+#             with open(file=filepath, mode='rb') as file:
+#                 content = file.read().decode(encoding='raw_unicode_escape')
+#             with open(file=filepath, mode='w', encoding='utf-8') as file:
+#                 file.write(content)
+#             logger.blue(f'Decoded {os.path.relpath(path=filepath)}')
+
+
 @final
 class Main:
     @staticmethod
@@ -128,6 +142,11 @@ class Main:
         Replacer.replace(filepath_or_folder_path=html_path)
         Linker.link(source_folder_path='.', target_folder_path=html_path, filenames=['README.md', 'LICENSE'])
         Remover.remove(filepaths=[os.path.join(html_path, '_sources')])
+
+        # Decoder.decode(filepaths=[
+        #     os.path.join(html_path, 'searchindex.js'),
+        #     os.path.join(html_path, '_static', 'translations.js'),
+        # ])
 
 
 if __name__ == '__main__':
