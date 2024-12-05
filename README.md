@@ -8,8 +8,7 @@
 
 ***How Does The Sunflorist Build His Shangri-La?***
 
-> 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》© 2024 由[向阳花花农](https://github.com/The-Sunflorist)创作，遵循[CC BY-NC-SA 4.0协议<!-- （中文） -->](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)，保留所有版权。
-> 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》包括由向阳花花农创作的诗歌、歌词、翻译、数字绘画等作品，不包括该网页所使用的[Furo](https://github.com/pradyunsg/furo)主题、[Twemoji](https://github.com/twitter/twemoji)表情包等非向阳花花农创作的内容。
+> 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》© 2024 由[向阳花花农](https://github.com/The-Sunflorist)创作，遵循[CC BY-NC-SA 4.0协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)，保留所有版权。《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》包括由向阳花花农创作的诗歌、歌词、翻译、数字绘画等作品，不包括该网页所使用的[Furo](https://github.com/pradyunsg/furo)主题、[Twemoji](https://github.com/twitter/twemoji)表情包等非向阳花花农创作的内容。
 
 ## <i class="em-svg em-sunflower" aria-role="presentation" aria-label="SUNFLOWER"></i> 1. 花海
 
