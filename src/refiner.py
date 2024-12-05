@@ -21,8 +21,8 @@ from logger_creator import LoggerCreator
 logger = LoggerCreator.get_logger(name=os.path.splitext(p=os.path.relpath(path=__file__))[0])
 
 
-class Replacer:
-    """Replace some content that can not be configured by Jupyter Book.
+class HTMLReplacer:
+    """Replace some content in HTML files.
     """
 
     __now = datetime.now().astimezone()
@@ -75,17 +75,31 @@ class Replacer:
             return
 
         with open(file=filepath_or_folder_path, mode='r+', encoding='utf-8') as file:
-            new_content = file.read()
-            for name, (old, new) in cls.__old_and_new.items():
-                new_content = re.sub(
+            content = file.read()
+            for old, new in cls.__old_and_new.values():
+                content = re.sub(
                     pattern=old,
                     repl=new.replace('{{static}}', static_folder_path),
-                    string=new_content,
+                    string=content,
                 )
             file.seek(0)
             file.truncate()
-            file.write(new_content)
+            file.write(content)
         logger.blue(f'Refined {os.path.relpath(path=filepath_or_folder_path)}')
+
+
+class JavaScriptReplacer:
+    """Replace some content in JavaScript files.
+    """
+
+    @staticmethod
+    def replace(filepath: str, old: str, new: str) -> None:
+        with open(file=filepath, mode='r+', encoding='utf-8') as file:
+            content = file.read().replace(old, new)
+            file.seek(0)
+            file.truncate()
+            file.write(content)
+        logger.blue(f'Refined {os.path.relpath(path=filepath)}')
 
 
 class Linker:
@@ -103,7 +117,7 @@ class Linker:
 
             source_filepath = os.path.abspath(path=os.path.join(source_folder_path, filename))
             run(args=['ln', '-s', source_filepath, target_filepath], check=True)
-            logger.green(f'Link created: {os.path.relpath(path=target_filepath)}')
+            logger.green(f'Link created {os.path.relpath(path=target_filepath)}')
 
 
 class Remover:
@@ -117,6 +131,20 @@ class Remover:
             logger.yellow(f'Removed {os.path.relpath(path=filepath)}')
 
 
+class Decoder:
+    """Decode some file encoded with raw_unicode_escape
+    """
+
+    @staticmethod
+    def decode(filepaths: list[str]) -> None:
+        for filepath in filepaths:
+            with open(file=filepath, mode='rb') as file:
+                content = file.read().decode(encoding='raw_unicode_escape')
+            with open(file=filepath, mode='w', encoding='utf-8') as file:
+                file.write(content)
+            logger.blue(f'Decoded {os.path.relpath(path=filepath)}')
+
+
 @final
 class Main:
     @staticmethod
@@ -125,7 +153,29 @@ class Main:
         # while it is saved in project/.tmp/ locally to avoid being uploaded onto iCloud
         html_path = os.path.join('_readthedocs' if 'readthedocs' in sys.path[0] else '.tmp', 'html')
 
-        Replacer.replace(filepath_or_folder_path=html_path)
+        HTMLReplacer.replace(filepath_or_folder_path=html_path)
+        Decoder.decode(filepaths=[
+            os.path.join(html_path, 'searchindex.js'),
+            os.path.join(html_path, '_static', 'translations.js'),  # this file must be decoded before replacement
+        ])
+        JavaScriptReplacer.replace(
+            filepath=os.path.join(html_path, '_static', 'translations.js'),
+            old='"Search finished, found ${resultCount} page(s) matching the search query.": '
+                '"搜索完成，匹配到 ${resultCount} 页。",',
+            new='"Search finished, found one page matching the search query.": "搜索完成，匹配到 1 页。",\n        '
+                '"Search finished, found ${resultCount} pages matching the search query.": '
+                '"搜索完成，匹配到 ${resultCount} 页。",',
+        )
+        JavaScriptReplacer.replace(
+            filepath=os.path.join(html_path, '_static', 'searchtools.js'),
+            old='    Search.status.innerText = Documentation.ngettext(\n'
+                '      "Search finished, found one page matching the search query.",\n'
+                '      "Search finished, found ${resultCount} pages matching the search query.",\n'
+                '      resultCount,',
+            new='    Search.status.innerText = Documentation.gettext(\n'
+                '      resultCount === 1 ? "Search finished, found one page matching the search query."\n'
+                '      : "Search finished, found ${resultCount} pages matching the search query."',
+        )
         Linker.link(source_folder_path='.', target_folder_path=html_path, filenames=['README.md', 'LICENSE'])
         Remover.remove(filepaths=[os.path.join(html_path, '_sources')])
 
