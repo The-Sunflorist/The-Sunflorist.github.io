@@ -8,8 +8,8 @@
 
 ***How Does The Sunflorist Build His Shangri-La?***
 
-> - 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》 © 2024 由[向阳花花农](https://github.com/The-Sunflorist)创作，遵循[CC BY-NC-SA 4.0协议（中文）](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)，保留所有版权。
-> - *[The Sunflorist‘s Shangri-La](https://github.com/The-Sunflorist/The-Sunflorist.github.io)* © 2024 by [The Sunflorist](https://github.com/The-Sunflorist) is licensed under [CC BY-NC-SA 4.0 (English)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en), all rights reserved.
+> 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》© 2024 由[向阳花花农](https://github.com/The-Sunflorist)创作，遵循[CC BY-NC-SA 4.0协议<!-- （中文） -->](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)，保留所有版权。
+> 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》包括由向阳花花农创作的诗歌、歌词、翻译、数字绘画等作品，不包括该网页所使用的[Furo](https://github.com/pradyunsg/furo)主题、[Twemoji](https://github.com/twitter/twemoji)表情包等非向阳花花农创作的内容。
 
 ## <i class="em-svg em-sunflower" aria-role="presentation" aria-label="SUNFLOWER"></i> 1. 花海
 
@@ -227,17 +227,4 @@ sudo launchctl config user path "$HOME/bin:$PATH"
 # 具体的命令在Makefile中
 # 使用latexmk的-silent选项减少终端的输出
 make latexpdf LATEXMKOPTS="-silent"
-```
-
-## <i class="em-svg em-sunny" aria-role="presentation" aria-label="BLACK SUN WITH RAYS"></i> 7. 封面
-
-***Covers***
-
-> 需要 `aux/OpenMoji/`， `aux/Seal.png`， `aux/Sun.png`。
-
-强制重新生成最后一组社交平台上的视频封面，打开[ImageOptim](https://imageoptim.com)压缩生成的封面：
-
-```shell
-# 查看帮助：python src/cover_maker.py -h
-python src/cover_maker.py -cf
 ```
