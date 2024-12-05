@@ -169,17 +169,19 @@ curl -L \
 
 > 需要 `.readthedocs.yaml`， `requirements.txt`。
 
-将 `main` 分支推送到 `origin` 的 `main` 分支：
+将 `main` 分支和 推送到 `origin` 的 `main` 分支；将 `dev` 分支和 推送到 `origin` 的 `dev` 分支：
 
 ```shell
 # 首次推送
 git push -u origin main
+git push -u origin dev
 
 # 非首次推送
 git push origin main
+git push origin dev
 ```
 
-首次推送 `main` 分支后，在GitHub和Gitee远程仓库的设置中修改默认分支为 `main` 分支。 `dev` 分支无需推送到远程仓库。
+首次推送 `main` 分支后，在GitHub和Gitee远程仓库的设置中修改默认分支为 `main` 分支。
 
 使用GitHub账号注册和登录Read the Docs，搜索添加GitHub的仓库，名称与GitHub账号同名（确保由此构成的域名没有被占用），默认分支填写 `main`，语言选择 `Simplified Chinese`，第一次导入会开始构建和部署，完成部署后通过[https://the-sunflorist.readthedocs.io](https://the-sunflorist.readthedocs.io)即可访问。
 
