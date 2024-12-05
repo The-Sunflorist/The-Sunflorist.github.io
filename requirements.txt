@@ -2,4 +2,6 @@ myst-parser
 furo
 sphinxcontrib-googleanalytics
 sphinx-copybutton
+sphinx-design
+jieba
 sty

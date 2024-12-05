@@ -18,7 +18,6 @@ from typing import final
 
 from logger_creator import LoggerCreator
 
-project_path = os.path.abspath(path=os.path.join(sys.path[0], '..'))
 logger = LoggerCreator.get_logger(name=os.path.splitext(p=os.path.relpath(path=__file__))[0])
 
 
@@ -30,19 +29,17 @@ class Replacer:
     __old_and_new: dict[str, tuple[str, str]] = {
         'footer': (
             r'\s*<div class="copyright">(.|\n)*?Furo</a>',
-            open(file=os.path.join(project_path, 'aux', 'copyright.html'), mode='r', encoding='utf-8')
+            open(file=os.path.join('aux', 'copyright.html'), mode='r', encoding='utf-8')
             .read().replace('{{year}}', f'{__now.year}')
-            .replace('{{date}}', re.sub(
-                r'(\d{2})(\d{2})$', repl=r'\1:\2', string=__now.strftime(format='%Y-%m-%d %H:%M:%S UTC %z'),
-            )),
+            .replace('{{date}}', __now.strftime(format='%Y-%m-%d %H:%M:%S UTC %:z')),
         ),
         'previous': (
             r'<span>Previous</span>',
-            r'<span><i class="em-svg em-fallen_leaf" aria-role="presentation" aria-label="FALLEN LEAF"></i>上一叶</span>',
+            r'<span><i class="em-svg em-fallen_leaf" aria-role="presentation" aria-label="FALLEN LEAF"></i> 上一叶</span>',
         ),
         'next': (
             r'<span>Next</span>',
-            r'<span>下一叶<i class="em-svg em-leaves" aria-role="presentation" '
+            r'<span>下一叶 <i class="em-svg em-leaves" aria-role="presentation" '
             r'aria-label="LEAF FLUTTERING IN WIND"></i></span>',
         ),
         'back_to_top': (r'<span>Back to top</span>', r'<span>返回顶部</span>'),
@@ -62,10 +59,6 @@ class Replacer:
             'aria-label="TWO HEARTS"></i> 有心栽花</span>',
         ),
         'home': (r'<div class="title">Home</div>', r'<div class="title">向阳花花农的花海</div>'),
-        'meta': (
-            r'<head>',
-            f'<head>\n{open(file=os.path.join(project_path, 'aux', 'meta.html'), mode='r', encoding='utf-8').read()}',
-        ),
     }
 
     @classmethod
@@ -103,12 +96,12 @@ class Linker:
     def link(source_folder_path: str, target_folder_path: str, filenames: list[str]) -> None:
         os.makedirs(name=target_folder_path, mode=0o755, exist_ok=True)
         for filename in filenames:
-            target_filepath = os.path.join(target_folder_path, filename)
+            target_filepath = os.path.abspath(path=os.path.join(target_folder_path, filename))
             if os.path.exists(path=target_filepath):
                 logger.yellow(f'{os.path.relpath(path=target_filepath)} already exists')
                 continue
 
-            source_filepath = os.path.join(source_folder_path, filename)
+            source_filepath = os.path.abspath(path=os.path.join(source_folder_path, filename))
             run(args=['ln', '-s', source_filepath, target_filepath], check=True)
             logger.green(f'Link created: {os.path.relpath(path=target_filepath)}')
 
@@ -130,14 +123,10 @@ class Main:
     def main() -> None:
         # Read the Docs saves html in project/_readthedocs/ folder,
         # while it is saved in project/.tmp/ locally to avoid being uploaded onto iCloud
-        html_path = os.path.join(project_path, '_readthedocs' if 'readthedocs' in project_path else '.tmp', 'html')
+        html_path = os.path.join('_readthedocs' if 'readthedocs' in sys.path[0] else '.tmp', 'html')
 
         Replacer.replace(filepath_or_folder_path=html_path)
-        Linker.link(
-            source_folder_path=project_path,
-            target_folder_path=html_path,
-            filenames=['README.md', 'LICENSE'],
-        )
+        Linker.link(source_folder_path='.', target_folder_path=html_path, filenames=['README.md', 'LICENSE'])
         Remover.remove(filepaths=[os.path.join(html_path, '_sources')])
 
 

@@ -5,10 +5,10 @@
 
 ***Outside the Event Horizon of The Sunflorist's Shangri-La***
 
+{attribution="—【东晋】陶渊明《[桃花源记](https://hanyu.baidu.com/shici/detail?pid=f3f889357df84af681cfc55098ced685)》（节选）"}
 > 缘溪行，忘路之远近。忽逢桃花林，夹岸数百步，中无杂树，芳草鲜美，落英缤纷。复行数十步，豁然开朗。土地平旷，屋舍<ruby>俨<rt>yǎn</rt></ruby>然，有良田、美池、桑竹之属。<ruby>阡<rt>qiān</rt></ruby>陌交通，鸡犬相闻。黄发垂<ruby>髫<rt>tiáo</rt></ruby>，怡然自乐。来此绝境，停数日，辞去，不复得路。
-> <p class="attribution">——【东晋】陶渊明《<a href="https://hanyu.baidu.com/shici/detail?pid=f3f889357df84af681cfc55098ced685">桃花源记</a>》（节选）</p>
 
-<img src="../imgs/Grapes.png" alt="Grapes" class="bg-transparent align-center">
+![Grapes](../_images/grapes.png)
 
 ## 相逢何必曾相识[^meet]
 
@@ -26,7 +26,7 @@
 
 ***Where Is The Sunflorist?***
 
-- <i class="em-svg em-e-mail" aria-role="presentation" aria-label="E-MAIL SYMBOL"></i>️ 邮箱： `the.sunflorist@foxmail.com`
+- <i class="em-svg em-e-mail" aria-role="presentation" aria-label="E-MAIL SYMBOL"></i>️ 邮箱： [`the.sunflorist@foxmail.com`](mailto:the.sunflorist@foxmail.com)
 - <i class="em-svg em-octopus" aria-role="presentation" aria-label="OCTOPUS"></i> GitHub Pages：[向阳花花农的花海](https://the-sunflorist.github.io)（大陆访问该网址有时较慢）
 - <i class="em-svg em-page_facing_up" aria-role="presentation" aria-label="PAGE FACING UP"></i> Read the Docs：[向阳花花农的花海](https://the-sunflorist.readthedocs.io)（同GitHub Pages内容一致）
 - <i class="em-svg em-gorilla" aria-role="presentation" aria-label="GORILLA"></i> CSDN：[向阳花花农](https://blog.csdn.net/The_Sunflorist)
@@ -47,7 +47,7 @@
 
 <i class="em-svg em-art" aria-role="presentation" aria-label="ARTIST PALETTE"></i> 他十分仰慕伊朗艺术家[Alireza Karimi Moghaddam](https://www.instagram.com/alirezakarimimoghadam)（阿里雷扎·卡里米·莫格丹）与荷兰19世纪画家[Vincent van Gogh](https://www.vangoghmuseum.nl/en/art-and-stories/art/vincent-van-gogh)（文森特·梵高）的画风，在他外行的插画中可依稀见其影响。他使用惊艳的[Procreate](https://procreate.com/procreate)绘制这些数字插画，临摹[以观书法](https://apps.apple.com/app/id1351158526)中的篆书制作印章，在[Adobe Fresco](https://www.adobe.com/products/fresco.html)中快捷地生成简易动画，利用[ImageOptim](https://imageoptim.com)高效地压缩 `.png` 和 `.gif` 图像以便优化网页的储存空间和加载速度。
 
-<i class="em-svg em-movie_camera" aria-role="presentation" aria-label="MOVIE CAMERA"></i> 在他社交平台的视频中，只使用了字库完备且优雅素净的开源字体[得意黑](https://github.com/atelier-anchor/smiley-sans)，视频封面中使用的表情符号来自开源的[OpenMoji](https://github.com/hfg-gmuend/openmoji)，视频中的文字内容通过轻盈明了的[Pages](https://support.apple.com/zh-cn/guide/pages/welcome/mac)进行排版。视频的背景音乐包括历久弥新的 *[Canon](https://baike.baidu.com/item/卡农/574520)* （《卡农》）、家喻户晓的 *[Good Morning to All](https://baike.baidu.com/item/英文生日歌/2559284#2)* （《祝大家早安》），在[弹琴吧](https://apps.apple.com/app/id1403263259)中搜得其乐谱，在足够强大的[GarageBand](https://www.apple.com/mac/garageband)（库乐队）中完成音乐演奏。视频的剪辑和渲染得益于免费而全能的[DaVinci Resolve](http://www.blackmagicdesign.com/products/davinciresolve)。
+<i class="em-svg em-movie_camera" aria-role="presentation" aria-label="MOVIE CAMERA"></i> 在他社交平台的视频中，只使用了字库完备且优雅素净的开源字体[得意黑](https://github.com/atelier-anchor/smiley-sans)，视频封面中使用的表情符号来自开源的[OpenMoji](https://github.com/hfg-gmuend/openmoji)，视频中的文字内容通过轻盈明了的[Pages](https://support.apple.com/zh-cn/guide/pages/welcome/mac)进行排版。视频的背景音乐包括历久弥新的《[Canon](https://baike.baidu.com/item/卡农/574520)》（《卡农》）、家喻户晓的《[Good Morning to All](https://baike.baidu.com/item/英文生日歌/2559284#2)》（《祝大家早安》），在[弹琴吧](https://apps.apple.com/app/id1403263259)中搜得其乐谱，在足够强大的[GarageBand](https://www.apple.com/mac/garageband)（库乐队）中完成音乐演奏。视频的剪辑和渲染得益于免费而全能的[DaVinci Resolve](http://www.blackmagicdesign.com/products/davinciresolve)。
 
 <i class="em-svg em-spider_web" aria-role="presentation" aria-label=""></i> [Visual Studio Code](https://code.visualstudio.com)是他格外青睐的纯文本编辑工具，[PyCharm Community Edition](https://www.jetbrains.com/pycharm)为编写Python代码提供了杰出的便捷性，[iTerm2](https://iterm2.com)和[Oh My Zsh](https://ohmyz.sh)极大改善了执行zsh命令的幸福感。[Sphinx](https://github.com/sphinx-doc/sphinx)为构建网页和生成 `.epub`、 `.pdf` 电子书节省了大把时间，清晰地呈现网页内容则归功于简约大气的[Furo](https://github.com/pradyunsg/furo)主题风格，网页中的表情符号来自于开源的[Emoji CSS](https://github.com/afeld/emoji-css)和[Twemoji](https://github.com/twitter/twemoji)。网页的源码通过可靠的[Git](https://git-scm.com)进行版本管理，源文件同时托管于[GitHub](https://github.com)和支持镜像Push到GitHub的[Gitee](https://gitee.com)，而[GitHub Pages](https://pages.github.com)服务和[Read the Docs](https://docs.readthedocs.io/en/stable/tutorial/index.html)是实现无偿存储、部署、发布网页的关键。
 
@@ -59,6 +59,6 @@
 
 ***Ask and Be Aware***
 
-<i class="em-svg em-handshake" aria-role="presentation" aria-label="HANDSHAKE"></i> 向阳花花农对共赢的商业合作持积极开放的态度，不认同任何违反《[中华人民共和国著作权法](https://www.gov.cn/guoqing/2021-10/29/content_5647633.htm)》的行为。
+<i class="em-svg em-pencil2" aria-role="presentation" aria-label="PENCIL"></i> 《[向阳花花农的花海](https://github.com/The-Sunflorist/The-Sunflorist.github.io)》包括由向阳花花农创作的诗歌、歌词、翻译、数字绘画等作品，不包括该网页所使用的[Furo](https://github.com/pradyunsg/furo)主题、[Twemoji](https://github.com/twitter/twemoji)表情包等非向阳花花农创作的内容。
 
-<i class="em-svg em-lion_face" aria-role="presentation" aria-label="LION FACE"></i> 该网页的搜索框无法准确地搜索中文字符，但能够较为准确地搜索英文字符，这是Sphinx在目前的局限性之一。
+<i class="em-svg em-handshake" aria-role="presentation" aria-label="HANDSHAKE"></i> 向阳花花农对共赢的商业合作持积极开放的态度，不认同任何违反《[中华人民共和国著作权法](https://www.gov.cn/guoqing/2021-10/29/content_5647633.htm)》的行为。

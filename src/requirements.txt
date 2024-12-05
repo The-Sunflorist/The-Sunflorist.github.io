@@ -1,7 +1,3 @@
 sphinx
 esbonio
 ghp-import
-
-# for cover maker
-matplotlib
-pandas

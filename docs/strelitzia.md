@@ -5,4 +5,4 @@
 
 ***A Strelitzia for You***
 
-<img src="../imgs/Wing.png" alt="Wing" class="bg-transparent align-center">
+![Wing](../_images/wing.png)

@@ -11,7 +11,7 @@
 
 一天又一天过去了，在原本寸草不生的荒漠里，漫山遍野都开满了花。热烈的[向日葵](./docs/sunflower)、迷人的[牵牛花](./docs/morning_glory)、浪漫的[白玫瑰](./docs/white_rose)、圣洁的[水芙蓉](./docs/lotus_flower)、灿烂的[映山红](./docs/azalea)、美好的[天堂鸟](./docs/strelitzia)、奇幻的[曼陀罗](./docs/datura)，五彩斑斓，生生不息。从这随风翻涌的[花海](https://t1.kugou.com/song.html?id=68tTJ5aCTV2)中，他摘下最别致的一朵，送给你了。
 
-<img src="imgs/Wave.png" alt="Wave" class="bg-transparent align-center">
+![Wave](_images/wave.png)
 
 ```{toctree}
 :caption: “花花世界”

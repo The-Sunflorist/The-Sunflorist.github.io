@@ -7,6 +7,11 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
 BUILDDIR      = .tmp
 
+SHELL := /bin/zsh
+
+DATETIME := "[$(shell date +"%F %T %z")]"
+LOG_FILEPATH := $(BUILDDIR)/_logs/$(shell date +%F).log
+
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
@@ -17,5 +22,7 @@ help:
 # $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@rm -rf $(BUILDDIR)/$@
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@echo $(DATETIME) >> $(LOG_FILEPATH)
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --color $(O) 2>&1 | tee >(sed -r 's/\x1b\[[0-9;]*m//g' >> $(LOG_FILEPATH))
+	@echo | tee -a $(LOG_FILEPATH)
 	@[[ $@ == html ]] && python src/refiner.py || exit 0
