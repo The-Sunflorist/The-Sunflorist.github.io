@@ -10,7 +10,8 @@ BUILDDIR      = .tmp
 SHELL := /bin/zsh
 
 DATETIME := "[$(shell date +"%F %T %z")]"
-LOG_FILEPATH := $(BUILDDIR)/_logs/$(shell date +%F).log
+LOG_FOLDER_PATH := $(BUILDDIR)/_logs
+LOG_FILEPATH := $(LOG_FOLDER_PATH)/$(shell date +%F).log
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -22,6 +23,7 @@ help:
 # $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@rm -rf $(BUILDDIR)/$@
+	@mkdir -p $(LOG_FOLDER_PATH)
 	@echo $(DATETIME) >> $(LOG_FILEPATH)
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --color $(O) 2>&1 | tee >(sed -r 's/\x1b\[[0-9;]*m//g' >> $(LOG_FILEPATH))
 	@echo | tee -a $(LOG_FILEPATH)

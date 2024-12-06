@@ -207,8 +207,3 @@ Temporary Items
 ### Others
 # Temporary files
 .tmp
-# Auxiliary files
-aux/*
-!aux/*.html
-!aux/book_cover.png
-!aux/cover_infos.csv

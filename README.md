@@ -1,7 +1,7 @@
 <!-- Created by 向阳花花农 (The Sunflorist) on 2024-11-22. -->
 <!-- The Sunflorist's Shangri-La © 2024 by The Sunflorist is licensed under CC BY-NC-SA 4.0, all rights reserved. -->
 
-<!-- 在文档中插入twemoji -->
+<!-- to use twemoji in this file -->
 <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 
 # <i class="em-svg em-building_construction" aria-role="presentation" aria-label=""></i> 向阳花花农的花海施工图
