@@ -68,6 +68,7 @@ gettext_compact = False
 myst_enable_extensions = [
     'attrs_block',  # add html attributes for inline contents
     'attrs_inline',  # add html attributes for block contents
+    'colon_fence',  # use colons instead of backticks for directives
     'dollarmath',  # dollar sign for latex
     'html_image',  # html img tag
     'substitution',  # substitution text
@@ -97,12 +98,12 @@ myst_number_code_blocks = ['python', 'markdown']
 
 # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#substitutions-with-jinja2
 myst_substitutions = {
+    'zh': '中文',
+    'en': 'English',
     'more': r'<i class="em-svg em-hibiscus" aria-role="presentation" aria-label="HIBISCUS"></i> 余香',
     'music': r'<i class="em-svg em-musical_score" aria-role="presentation" aria-label="MUSICAL SCORE"></i> 原曲',
     'idea': r'<i class="em-svg em-star2" aria-role="presentation" aria-label="GLOWING STAR"></i> 灵感',
     'meaning': r'<i class="em-svg em-mag" aria-role="presentation" aria-label="LEFT-POINTING MAGNIFYING GLASS"></i> 大意',
-    'zh': '中文',
-    'en': 'English',
 }
 
 ## HTML options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

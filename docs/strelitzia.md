@@ -5,4 +5,4 @@
 
 ***A Strelitzia for You***
 
-![Wing](../_images/wing.png)
+![Wing](/_images/wing.png)

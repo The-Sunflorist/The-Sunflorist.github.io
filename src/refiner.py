@@ -28,7 +28,7 @@ class HTMLReplacer:
     __now = datetime.now().astimezone()
     __old_and_new: dict[str, tuple[str, str]] = {
         'footer': (
-            r'\s*<div class="copyright">(.|\n)*?Furo</a>',
+            r'\s*<div class="copyright">(.|\n)*?</div>',
             open(file=os.path.join('aux', 'copyright.html'), mode='r', encoding='utf-8')
             .read().replace('{{year}}', f'{__now.year}')
             .replace('{{date}}', __now.strftime(format='%Y-%m-%d %H:%M:%S UTC %:z')),

@@ -5,4 +5,4 @@
 
 ***A Datura for You***
 
-![Mobius](../_images/mobius.png)
+![Mobius](/_images/mobius.png)

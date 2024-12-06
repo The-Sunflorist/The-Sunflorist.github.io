@@ -5,4 +5,4 @@
 
 ***An Azalea for You***
 
-![Gingko Leaf](../_images/gingko_Leaf.png)
+![Gingko Leaf](/_images/gingko_Leaf.png)
