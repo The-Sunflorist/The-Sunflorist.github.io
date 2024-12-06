@@ -29,9 +29,9 @@ _author_zh = '向阳花花农'
 _author_en = 'The Sunflorist'
 author = _author_zh
 
-_copyright_zh = f'《{_project_zh}》© {_year} 由{_author_zh}创作，遵循CC BY-NC-SA 4.0协议，保留所有版权。'
-_copyright_en = (f"The {_project_en} © {_year} by {_author_en} is licensed under CC BY-NC-SA 4.0, "
-                 f"all rights reserved.")
+_license = 'CC BY-NC-SA 4.0'
+_copyright_zh = f'《{_project_zh}》© {_year} 由{_author_zh}创作，遵循{_license}协议，保留所有版权。'
+_copyright_en = f"{_project_en} © {_year} by {_author_en} is licensed under {_license}, all rights reserved."
 copyright = f'{_copyright_zh}{_copyright_en}'
 project_copyright = copyright
 
@@ -73,6 +73,7 @@ myst_enable_extensions = [
     'html_image',  # html img tag
     'substitution',  # substitution text
 ]
+
 myst_links_external_new_tab = True
 
 _description_zh = '因为喜欢，所以种向日葵。'
@@ -98,8 +99,9 @@ myst_number_code_blocks = ['python', 'markdown']
 
 # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#substitutions-with-jinja2
 myst_substitutions = {
-    'zh': '中文',
-    'en': 'English',
+    'zh': r'<i class="em-svg em-mahjong" aria-role="presentation" aria-label="MAHJONG TILE RED DRAGON"></i> 中文',
+    'en': r'<i class="em-svg em-abcd" aria-role="presentation" '
+          r'aria-label="INPUT SYMBOL FOR LATIN SMALL LETTERS"></i> English',
     'more': r'<i class="em-svg em-hibiscus" aria-role="presentation" aria-label="HIBISCUS"></i> 余香',
     'music': r'<i class="em-svg em-musical_score" aria-role="presentation" aria-label="MUSICAL SCORE"></i> 原曲',
     'idea': r'<i class="em-svg em-star2" aria-role="presentation" aria-label="GLOWING STAR"></i> 灵感',

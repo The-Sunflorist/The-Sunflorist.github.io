@@ -31,7 +31,7 @@ class HTMLReplacer:
             r'\s*<div class="copyright">(.|\n)*?</div>',
             open(file=os.path.join('aux', 'copyright.html'), mode='r', encoding='utf-8')
             .read().replace('{{year}}', f'{__now.year}')
-            .replace('{{date}}', __now.strftime(format='%Y-%m-%d %H:%M:%S UTC %:z')),
+            .replace('{{date}}', __now.strftime(format='%Y年%m月%d日%H:%M:%S UTC%:z')),
         ),
         'previous': (
             r'<span>Previous</span>',
@@ -77,11 +77,7 @@ class HTMLReplacer:
         with open(file=filepath_or_folder_path, mode='r+', encoding='utf-8') as file:
             content = file.read()
             for old, new in cls.__old_and_new.values():
-                content = re.sub(
-                    pattern=old,
-                    repl=new.replace('{{static}}', static_folder_path),
-                    string=content,
-                )
+                content = re.sub(pattern=old, repl=new.replace('{{static}}', static_folder_path), string=content)
             file.seek(0)
             file.truncate()
             file.write(content)

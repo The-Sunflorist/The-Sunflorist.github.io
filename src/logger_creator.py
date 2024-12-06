@@ -70,9 +70,8 @@ class ColoredLogger:
 
 
 class LoggerCreator:
-    @classmethod
+    @staticmethod
     def get_logger(
-            cls,
             name: str,
             level: int = DEBUG,
             to_console: bool = True,
