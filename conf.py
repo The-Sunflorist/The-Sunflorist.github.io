@@ -42,7 +42,7 @@ version = _now.strftime(format='%Y.%m')
 
 # Sphinx extensions: https://www.sphinx-doc.org/en/master/usage/extensions/index.html
 extensions = [
-    'myst_parser',  # parse extended markdown
+    'myst_nb',  # parse jupyter notebook and myst markdown
     'sphinx.ext.duration',  # show duration for building each file
     'sphinx.ext.mathjax',  # render LaTeX to JavaScript
     'sphinxcontrib.googleanalytics',  # Google Analytics

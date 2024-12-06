@@ -1,4 +1,4 @@
-myst-parser
+myst-nb
 furo
 sphinxcontrib-googleanalytics
 sphinx-copybutton
