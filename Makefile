@@ -19,12 +19,14 @@ help:
 
 .PHONY: help Makefile
 
-# Catch-all target: route all unknown targets to Sphinx using the new "make mode" option.
+# Catch-all target: route all unknown targets to Sphinx
+# using the new "make mode" option.
 # $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@rm -rf $(BUILDDIR)/$@
 	@mkdir -p $(LOG_FOLDER_PATH)
 	@echo $(DATETIME) >> $(LOG_FILEPATH)
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --color $(O) 2>&1 | tee >(sed -r 's/\x1b\[[0-9;]*m//g' >> $(LOG_FILEPATH))
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --color \
+     $(O) 2>&1 | tee >(sed -r 's/\x1b\[[0-9;]*m//g' >> $(LOG_FILEPATH))
 	@echo | tee -a $(LOG_FILEPATH)
 	@[[ $@ == html ]] && python src/refiner.py || exit 0
