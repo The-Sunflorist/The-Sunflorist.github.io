@@ -33,7 +33,7 @@ conda activate latest
 # 如果下载速度过慢，添加选项使用清华PyPI：-i https://pypi.tuna.tsinghua.edu.cn/simple
 # 清华PyPI不包含的Python包，使用默认PyPI：-i https://pypi.org/simple
 pip install -U pip
-pip install -U -r source/src/requirements.txt
+pip install -U -r source/_pythons/requirements.txt
 pip install -U -r source/requirements.txt
 ```
 

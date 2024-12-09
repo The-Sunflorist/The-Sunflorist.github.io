@@ -69,8 +69,8 @@ today_fmt = '%Y-%m-%d %H:%M:%S %Z'
 # templates_path = ['_templates']
 exclude_patterns = [
     '.DS_Store', '.idea', 'build',
-    '_images', '_static', '_templates',
-    'aux', 'src',
+    '_images', '_pythons', '_static', '_templates',
+    'aux',
     'README.md',
 ]
 

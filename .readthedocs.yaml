@@ -10,7 +10,7 @@ build:
     pre_build:
       - rm -rf _readthedocs/
     post_build:
-      - python source/src/refiner.py
+      - python source/_pythons/refiner.py
 python:
   install:
     - requirements: source/requirements.txt
