@@ -14,21 +14,15 @@ import os
 import sys
 from datetime import datetime
 
-# note: non-Sphinx configurations are prefixed with an `_`
-#  for distinguishing, not compulsory
+# note: non-Sphinx configurations are prefixed with an `_`, but not compulsory
 _now = datetime.now().astimezone()
 _year = _now.year
 _on_read_the_docs = 'readthedocs' in sys.path[0]
 
-## project information: https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information # noqa
-
-_project_en = "The Sunflorist's Shangri-La"
 _project_zh = '向阳花花农的花海'
-project = _project_zh
-
+_project_en = "The Sunflorist's Shangri-La"
 _author_zh = '向阳花花农'
 _author_en = 'The Sunflorist'
-author = _author_zh
 
 _license = 'CC BY-NC-SA 4.0'
 _copyright_zh = (
@@ -38,13 +32,24 @@ _copyright_en = (
     f"{_project_en} © {_year} by {_author_en} is licensed under {_license},"
     f" all rights reserved."
 )
+
+_description_zh = '因为喜欢，所以种向日葵。'
+_description_en = 'He grows sunflowers out of passion.'
+
+# -----------------------------------------------------------------------------
+# project information: https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information # noqa
+
+project = _project_zh
+author = _author_zh
+
 copyright = f'{_copyright_zh}{_copyright_en}'  # noqa
 project_copyright = copyright
 
 release = _now.strftime(format='%Y.%m.%d%H%M')
 version = _now.strftime(format='%Y.%m')
 
-## general configuration: https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration # noqa
+# -----------------------------------------------------------------------------
+# general configuration: https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration # noqa
 
 # Sphinx extensions: https://www.sphinx-doc.org/en/master/usage/extensions/index.html # noqa
 extensions = [
@@ -74,7 +79,8 @@ _html_language = language.replace('_', '-')
 
 gettext_compact = False
 
-## MyST options: https://myst-parser.readthedocs.io/en/latest/index.html
+# -----------------------------------------------------------------------------
+# MyST options: https://myst-parser.readthedocs.io/en/latest/index.html
 
 # MyST extensions: https://myst-parser.readthedocs.io/en/latest/syntax/optional.html # noqa
 myst_enable_extensions = [
@@ -88,27 +94,10 @@ myst_enable_extensions = [
 
 myst_links_external_new_tab = True
 
-_description_zh = '因为喜欢，所以种向日葵。'
-_description_en = 'He grows sunflowers out of passion.'
-
-_keywords_zh = (
-    f'{_author_zh}, {_project_zh}, 向日葵, 阳光, 花海, 桃源, 桃花源,'
-    f' 世外桃源, 乌托邦, 诗歌, 歌词, 数字绘画'
-)
-_keywords_en = (
-    f'{_author_en}, {_project_en}, sunflower, sunshine, shangri-la, arcadia,'
-    f' xanadu, peach garden, utopia, poem, lyrics, digital drawing'
-)
-
 myst_html_meta = {
     f'author lang={_html_language}': _author_zh,
-    f'description lang={_html_language}': _description_zh,
-    f'keywords lang={_html_language}': _keywords_zh,
     f'copyright lang={_html_language}': _copyright_zh,
-
     'author lang=en': _author_en,
-    'description lang=en': _description_en,
-    'keywords lang=en': _keywords_en,
     'copyright lang=en': _copyright_en,
 }
 
@@ -130,7 +119,8 @@ myst_substitutions = {
                r'aria-label="LEFT-POINTING MAGNIFYING GLASS"></i> 大意',
 }
 
-## HTML options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output # noqa
+# -----------------------------------------------------------------------------
+# HTML options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output # noqa
 
 html_title = project
 html_favicon = '_static/sun_100x100.png'
@@ -160,7 +150,8 @@ html_search_options = {
 # https://dailystuff.nl/blog/2023/adding-google-analytics-in-sphinx
 googleanalytics_id = 'G-J355ELCH1B' if _on_read_the_docs else 'G-GVGCSPC1K4'
 
-## todo: EPUB options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-epub-output # noqa
+# -----------------------------------------------------------------------------
+# todo: EPUB options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-epub-output # noqa
 
 epub_description = f'{_description_zh}{_description_en}'
 epub_identifier = _project_en.replace(' ', '-').replace("'", '')
@@ -169,7 +160,8 @@ epub_tocdepth = 6
 epub_tocscope = 'includehidden'
 epub_show_urls = 'no'
 
-## todo: LaTeX options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output # noqa
+# -----------------------------------------------------------------------------
+# todo: LaTeX options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output # noqa
 
 # (startdocname, targetname, title, author, theme, toctree_only)
 # latex_documents = ()

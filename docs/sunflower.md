@@ -1,3 +1,12 @@
+---
+myst:
+  html_meta:
+    "description lang=zh-CN": "因为喜欢，所以种向日葵。"
+    "description lang=en": "He grows sunflowers out of passion."
+    "keywords lang=zh-CN": "诗歌, 向日葵, 人生, 快乐, 希望, 阳光, 热爱, 积极, 哲理"
+    "keywords lang=en": "poem, sunflower, life, happy, hope, sunshine, passion, energetic, philosophy"
+---
+
 <!-- Created by 向阳花花农 (The Sunflorist) on 2024-11-22. -->
 <!-- The Sunflorist's Shangri-La © 2024 by The Sunflorist is licensed under CC BY-NC-SA 4.0, all rights reserved. -->
 
