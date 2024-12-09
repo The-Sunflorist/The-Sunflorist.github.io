@@ -33,8 +33,8 @@ conda activate latest
 # 如果下载速度过慢，添加选项使用清华PyPI：-i https://pypi.tuna.tsinghua.edu.cn/simple
 # 清华PyPI不包含的Python包，使用默认PyPI：-i https://pypi.org/simple
 pip install -U pip
-pip install -U -r src/requirements.txt
-pip install -U -r requirements.txt
+pip install -U -r source/src/requirements.txt
+pip install -U -r source/requirements.txt
 ```
 
 ## <i class="em-svg em-house" aria-role="presentation" aria-label="HOUSE BUILDING"></i> 3. 仓库
@@ -50,7 +50,7 @@ sphinx-quickstart ~/workspace/Sphinx/The-Sunflorist.github.io
 按提示输入：
 
 ```text
-> Separate source and build directories (y/n) [n]:
+> Separate source and build directories (y/n) [n]: y
 > Project name: 向阳花花农的花海
 > Author name(s): 向阳花花农
 > Project release []:
@@ -88,7 +88,7 @@ git commit -m 'add git ignore, license'
 git switch -c dev
 ```
 
-删除 `make.bat` 和 `_build/`；修改 `Makefile` 和 `conf.py`；添加[MyST](https://myst-parser.readthedocs.io)文本、Python代码、图像等文件。如需将 `.rst` 文件转化为 `.md` 文件：
+删除 `make.bat`；修改 `Makefile` 和 `source/conf.py`；添加[MyST](https://myst-parser.readthedocs.io)文本、Python代码、图像等文件。如需将 `.rst` 文件转化为 `.md` 文件：
 
 ```shell
 conda create -n r2m python -y
@@ -139,7 +139,7 @@ git switch dev
 
 ### <i class="em-svg em-octopus" aria-role="presentation" aria-label="OCTOPUS"></i> 5.1. GitHub
 
-清除 `.tmp/html/`，生成 `.html` 等网页文件保存到 `.tmp/html/` 中，使用Python脚本修改网页的脚注、目录标题、翻页按钮等：
+清除 `build/html/`，生成 `.html` 等网页文件保存到 `build/html/` 中，使用Python脚本修改网页的脚注、目录标题、翻页按钮等：
 
 ```shell
 # 具体的命令在Makefile中
@@ -149,7 +149,7 @@ make html
 将本地构建好的网页文件推送到 `origin` 的 `gh-pages` 分支：
 
 ```shell
-ghp-import -flnp .tmp/html/
+ghp-import -flnp build/html/
 ```
 
 首次推送 `gh-pages` 分支后，在GitHub远程仓库的设置中打开Pages服务，Source选择 `Deploy from a branch`，Branch选择 `gh-pages` 分支下的 `/ (root)` 目录。等待GitHub完成部署后，通过[https://the-sunflorist.github.io](https://the-sunflorist.github.io)即可访问向阳花花农的花海。
@@ -167,7 +167,7 @@ curl -L \
 
 ### <i class="em-svg em-page_facing_up" aria-role="presentation" aria-label="PAGE FACING UP"></i> 5.2. Read the Docs
 
-> 需要 `.readthedocs.yaml`， `requirements.txt`。
+> 需要 `.readthedocs.yaml`， `source/requirements.txt`。
 
 将 `main` 分支和 推送到 `origin` 的 `main` 分支；将 `dev` 分支和 推送到 `origin` 的 `dev` 分支：
 
@@ -195,7 +195,7 @@ git push origin dev
 
 ### <i class="em-svg em-orange_book" aria-role="presentation" aria-label="ORANGE BOOK"></i> 6.1. EPUB
 
-清除 `.tmp/epub/`，生成 `.epub` 等文件保存到 `.tmp/epub/` 中：
+清除 `build/epub/`，生成 `.epub` 等文件保存到 `build/epub/` 中：
 
 ```shell
 # 具体的命令在Makefile中
@@ -222,7 +222,7 @@ sudo launchctl config user path "$HOME/bin:$PATH"
 </fontconfig>
 ```
 
-清除 `.tmp/latex/`，生成 `.tex` 和 `.pdf` 等文件保存到 `.tmp/latex/` 中，语言设置为 `zh_CN` 的Sphinx项目将默认使用 `xelatex` 作为$\TeX$引擎，而 `en` 语言默认的 `pdflatex` 不支持编译Unicode字符：
+清除 `build/latex/`，生成 `.tex` 和 `.pdf` 等文件保存到 `build/latex/` 中，语言设置为 `zh_CN` 的Sphinx项目将默认使用 `xelatex` 作为$\TeX$引擎，而 `en` 语言默认的 `pdflatex` 不支持编译Unicode字符：
 
 ```shell
 # 具体的命令在Makefile中

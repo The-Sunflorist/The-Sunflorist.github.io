@@ -32,7 +32,7 @@ class HTMLReplacer:
         'footer': (
             r'\s*<div class="copyright">(.|\n)*?</div>',
             open(
-                file=os.path.join('aux', 'copyright.html'),
+                file=os.path.join('source', 'aux', 'copyright.html'),
                 mode='r',
                 encoding='utf-8',
             ).read().replace('{{year}}', f'{__now.year}').replace(
@@ -194,9 +194,10 @@ class Main:
     @staticmethod
     def main() -> None:
         # Read the Docs saves html in project/_readthedocs/ folder,
-        # while it is saved in project/.tmp/ locally to not sync to iCloud
+        # while it is saved in project/build/ locally
         html_path = os.path.join(
-            '_readthedocs' if 'readthedocs' in sys.path[0] else '.tmp', 'html',
+            '_readthedocs' if 'readthedocs' in sys.path[0]
+            else 'build', 'html',
         )
 
         HTMLReplacer.replace(filepath_or_folder_path=html_path)

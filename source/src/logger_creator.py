@@ -90,7 +90,7 @@ class LoggerCreator:
             name: str,
             level: int = DEBUG,
             to_console: bool = True,
-            log_folder_path: str | None = os.path.join('.tmp', '_logs'),
+            log_folder_path: str | None = os.path.join('build', '_logs'),
     ) -> ColoredLogger:
         """Create a logger.
 

@@ -4,8 +4,8 @@
 # and also from the environment for the first two.
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
-SOURCEDIR     = .
-BUILDDIR      = .tmp
+SOURCEDIR     = source
+BUILDDIR      = build
 
 SHELL := /bin/zsh
 
@@ -29,4 +29,4 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --color \
      $(O) 2>&1 | tee >(sed -r 's/\x1b\[[0-9;]*m//g' >> $(LOG_FILEPATH))
 	@echo | tee -a $(LOG_FILEPATH)
-	@[[ $@ == html ]] && python src/refiner.py || exit 0
+	@[[ $@ == html ]] && python source/src/refiner.py || exit 0
