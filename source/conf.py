@@ -36,8 +36,8 @@ _copyright_en = (
 _description_zh = '因为喜欢，所以种向日葵。'
 _description_en = 'He grows sunflowers out of passion.'
 
-# -----------------------------------------------------------------------------
-# project information: https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information # noqa
+# -- project information -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information # noqa
 
 project = _project_zh
 author = _author_zh
@@ -48,8 +48,8 @@ project_copyright = copyright
 release = _now.strftime(format='%Y.%m.%d%H%M')
 version = _now.strftime(format='%Y.%m')
 
-# -----------------------------------------------------------------------------
-# general configuration: https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration # noqa
+# -- general configuration ---------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration # noqa
 
 # Sphinx extensions: https://www.sphinx-doc.org/en/master/usage/extensions/index.html # noqa
 extensions = [
@@ -78,8 +78,8 @@ _html_language = language.replace('_', '-')
 
 gettext_compact = False
 
-# -----------------------------------------------------------------------------
-# MyST options: https://myst-parser.readthedocs.io/en/latest/index.html
+# -- MyST options ------------------------------------------------------------
+# https://myst-parser.readthedocs.io/en/latest/index.html
 
 # MyST extensions: https://myst-parser.readthedocs.io/en/latest/syntax/optional.html # noqa
 myst_enable_extensions = [
@@ -118,8 +118,8 @@ myst_substitutions = {
                r'aria-label="LEFT-POINTING MAGNIFYING GLASS"></i> 大意',
 }
 
-# -----------------------------------------------------------------------------
-# HTML options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output # noqa
+# -- HTML options ------------------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output # noqa
 
 html_title = project
 html_favicon = '_static/logos/sun_100x100.png'
@@ -149,8 +149,8 @@ html_search_options = {
 # https://dailystuff.nl/blog/2023/adding-google-analytics-in-sphinx
 googleanalytics_id = 'G-J355ELCH1B' if _on_read_the_docs else 'G-GVGCSPC1K4'
 
-# -----------------------------------------------------------------------------
-# todo: EPUB options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-epub-output # noqa
+# -- todo: EPUB options ------------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-epub-output # noqa
 
 epub_description = f'{_description_zh}{_description_en}'
 epub_identifier = _project_en.replace(' ', '-').replace("'", '')
@@ -159,8 +159,8 @@ epub_tocdepth = 6
 epub_tocscope = 'includehidden'
 epub_show_urls = 'no'
 
-# -----------------------------------------------------------------------------
-# todo: LaTeX options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output # noqa
+# -- todo: LaTeX options -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output # noqa
 
 # (startdocname, targetname, title, author, theme, toctree_only)
 # latex_documents = ()
