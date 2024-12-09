@@ -123,7 +123,7 @@ myst_substitutions = {
 # HTML options: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output # noqa
 
 html_title = project
-html_favicon = '_static/sun_100x100.png'
+html_favicon = '_static/logos/sun_100x100.png'
 
 html_static_path = ['_static']
 
@@ -131,8 +131,8 @@ html_theme = 'furo'
 html_theme_options = {
     'announcement': r'<i class="em-svg em-tada" aria-role="presentation" '
                     r'aria-label="PARTY POPPER"></i> Bravo! 恭喜你觅得一处桃花源！',
-    'light_logo': 'sun_light_500x500.gif',
-    'dark_logo': 'sun_dark_500x500.gif',
+    'light_logo': 'logos/sun_light_500x500.gif',
+    'dark_logo': 'logos/sun_dark_500x500.gif',
     'top_of_page_buttons': [],
 }
 

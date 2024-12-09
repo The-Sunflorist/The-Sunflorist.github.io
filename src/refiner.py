@@ -92,7 +92,7 @@ class HTMLReplacer:
                         filename,
                     ),
                     static_folder_path=f'../{static_folder_path}'
-                    if static_folder_path else '_static',
+                    if static_folder_path else '_static/license_images',
                 )
             return
 
