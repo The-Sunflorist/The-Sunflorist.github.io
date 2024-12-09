@@ -32,7 +32,7 @@ class HTMLReplacer:
         'footer': (
             r'\s*<div class="copyright">(.|\n)*?</div>',
             open(
-                file=os.path.join('source', 'aux', 'copyright.html'),
+                file=os.path.join('source', '_extra', 'copyright.html'),
                 mode='r',
                 encoding='utf-8',
             ).read().replace('{{year}}', f'{__now.year}').replace(

@@ -68,10 +68,9 @@ today_fmt = '%Y-%m-%d %H:%M:%S %Z'
 # todo
 # templates_path = ['_templates']
 exclude_patterns = [
-    '.DS_Store', '.idea', 'build',
-    '_images', '_pythons', '_static', '_templates',
-    'aux',
-    'README.md',
+    '.DS_Store', '.idea',
+    '_extra', '_images', '_pythons', '_static', '_templates',
+    'build', 'README.md',
 ]
 
 language = 'zh_CN'
@@ -155,7 +154,7 @@ googleanalytics_id = 'G-J355ELCH1B' if _on_read_the_docs else 'G-GVGCSPC1K4'
 
 epub_description = f'{_description_zh}{_description_en}'
 epub_identifier = _project_en.replace(' ', '-').replace("'", '')
-epub_cover = ('aux/book_cover.png', '')
+epub_cover = ('_extra/book_cover.png', '')
 epub_tocdepth = 6
 epub_tocscope = 'includehidden'
 epub_show_urls = 'no'
