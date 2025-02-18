@@ -87,10 +87,10 @@ class ColoredLogger:
 class LoggerCreator:
     @staticmethod
     def get_logger(
-            name: str,
-            level: int = DEBUG,
-            to_console: bool = True,
-            log_folder_path: str | None = os.path.join('build', '_logs'),
+        name: str,
+        level: int = DEBUG,
+        to_console: bool = True,
+        log_folder_path: str | None = os.path.join('_readthedocs', '_logs'),
     ) -> ColoredLogger:
         """Create a logger.
 

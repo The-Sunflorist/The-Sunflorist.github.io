@@ -5,7 +5,7 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
-BUILDDIR      = build
+BUILDDIR      = _readthedocs
 
 SHELL := /bin/zsh
 

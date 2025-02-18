@@ -139,7 +139,7 @@ git switch dev
 
 ### <i class="em-svg em-octopus" aria-role="presentation" aria-label="OCTOPUS"></i> 5.1. GitHub
 
-清除 `build/html/`，生成 `.html` 等网页文件保存到 `build/html/` 中，使用Python脚本修改网页的脚注、目录标题、翻页按钮等：
+清除 `_readthedocs/html/`，生成 `.html` 等网页文件保存到 `_readthedocs/html/` 中，使用Python脚本修改网页的脚注、目录标题、翻页按钮等：
 
 ```shell
 # 具体的命令在Makefile中
@@ -149,7 +149,7 @@ make html
 将本地构建好的网页文件推送到 `origin` 的 `gh-pages` 分支：
 
 ```shell
-ghp-import -flnp build/html/
+ghp-import -flnp _readthedocs/html/
 ```
 
 首次推送 `gh-pages` 分支后，在GitHub远程仓库的设置中打开Pages服务，Source选择 `Deploy from a branch`，Branch选择 `gh-pages` 分支下的 `/ (root)` 目录。等待GitHub完成部署后，通过[https://the-sunflorist.github.io](https://the-sunflorist.github.io)即可访问向阳花花农的花海。
@@ -195,7 +195,7 @@ git push origin dev
 
 ### <i class="em-svg em-orange_book" aria-role="presentation" aria-label="ORANGE BOOK"></i> 6.1. EPUB
 
-清除 `build/epub/`，生成 `.epub` 等文件保存到 `build/epub/` 中：
+清除 `_readthedocs/epub/`，生成 `.epub` 等文件保存到 `_readthedocs/epub/` 中：
 
 ```shell
 # 具体的命令在Makefile中
@@ -222,7 +222,7 @@ sudo launchctl config user path "$HOME/bin:$PATH"
 </fontconfig>
 ```
 
-清除 `build/latex/`，生成 `.tex` 和 `.pdf` 等文件保存到 `build/latex/` 中，语言设置为 `zh_CN` 的Sphinx项目将默认使用 `xelatex` 作为$\TeX$引擎，而 `en` 语言默认的 `pdflatex` 不支持编译Unicode字符：
+清除 `_readthedocs/latex/`，生成 `.tex` 和 `.pdf` 等文件保存到 `_readthedocs/latex/` 中，语言设置为 `zh_CN` 的Sphinx项目将默认使用 `xelatex` 作为$\TeX$引擎，而 `en` 语言默认的 `pdflatex` 不支持编译Unicode字符：
 
 ```shell
 # 具体的命令在Makefile中

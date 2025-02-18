@@ -203,3 +203,6 @@ Temporary Items
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+### Others
+_readthedocs

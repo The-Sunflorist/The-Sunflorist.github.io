@@ -77,9 +77,9 @@ class HTMLReplacer:
 
     @classmethod
     def replace(
-            cls,
-            filepath_or_folder_path: str,
-            static_folder_path: str = '',
+        cls,
+        filepath_or_folder_path: str,
+        static_folder_path: str = '',
     ) -> None:
         if os.path.isdir(s=filepath_or_folder_path):
             for filename in filter(
@@ -137,9 +137,9 @@ class Linker:
 
     @staticmethod
     def link(
-            source_folder_path: str,
-            target_folder_path: str,
-            filenames: list[str],
+        source_folder_path: str,
+        target_folder_path: str,
+        filenames: list[str],
     ) -> None:
         os.makedirs(name=target_folder_path, mode=0o755, exist_ok=True)
         for filename in filenames:
@@ -193,12 +193,7 @@ class Decoder:
 class Main:
     @staticmethod
     def main() -> None:
-        # Read the Docs saves html in project/_readthedocs/ folder,
-        # while it is saved in project/build/ locally
-        html_path = os.path.join(
-            '_readthedocs' if 'readthedocs' in sys.path[0]
-            else 'build', 'html',
-        )
+        html_path = os.path.join('_readthedocs', 'html')
 
         HTMLReplacer.replace(filepath_or_folder_path=html_path)
         Decoder.decode(filepaths=[

@@ -55,10 +55,8 @@ version = _now.strftime(format='%Y.%m')
 extensions = [
     'myst_nb',  # parse jupyter notebook and myst markdown
     'sphinx.ext.duration',  # show duration for building each file
-    'sphinx.ext.mathjax',  # render LaTeX to JavaScript
     'sphinxcontrib.googleanalytics',  # Google Analytics
     'sphinx_copybutton',  # copy button for code
-    'sphinx_design',  # screen-size responsive web-components
 ]
 
 # Sphinx uses `time` instead of `datetime` package,
@@ -69,8 +67,8 @@ today_fmt = '%Y-%m-%d %H:%M:%S %Z'
 # templates_path = ['_templates']
 exclude_patterns = [
     '.DS_Store', '.idea',
-    '_extra', '_images', '_pythons', '_static', '_templates',
-    'build', 'README.md',
+    '_extra', '_images', '_pythons', '_static', '_templates', '_readthedocs',
+    'README.md',
 ]
 
 language = 'zh_CN'
