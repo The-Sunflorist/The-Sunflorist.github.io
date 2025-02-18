@@ -1,3 +1,12 @@
+---
+myst:
+  html_meta:
+    "description lang=zh-CN": "因为喜欢，所以种向日葵。"
+    "description lang=en": "He grows sunflowers out of passion."
+    "keywords lang=zh-CN": "诗歌, 向日葵, 人生, 快乐, 希望, 阳光, 热爱, 积极, 哲理"
+    "keywords lang=en": "poem, sunflower, life, happy, hope, sunshine, passion, energetic, philosophy"
+---
+
 <!-- Created by 向阳花花农 (The Sunflorist) on 2024-11-22. -->
 <!-- The Sunflorist's Shangri-La © 2024 by The Sunflorist is licensed under CC BY-NC-SA 4.0, all rights reserved. -->
 
@@ -7,7 +16,7 @@
 
 夜幕将至，向阳花花农结束了一天的耕作。当他经过种满向日葵的小山丘时，他把它们收集的阳光装进玻璃瓶里带回家，一屋子的黑暗吓得以光速逃之夭夭，唯独留下了赖在脚底的影子们。无论这些阴影如何地蠢蠢欲动，他都毫不在意，因为他的眼里只有光。
 
-![Comet](../_images/comet.png)
+![Comet](/_images/comet.png)
 
 ## 因为喜欢
 
@@ -15,9 +24,6 @@
 
 <!-- 广州 2024-10-03 -->
 
-`````{tab-set}
-
-````{tab-item} {{ zh }}
 ```{line-block}
 因为喜欢，
 所以他向她单膝跪地；
@@ -31,9 +37,9 @@
 曾害他形如枯槁，
 死灰其心。
 ```
-````
 
-````{tab-item} {{ en }}
+---
+
 ```{line-block}
 Out of passion for her,
 He gets down on one knee.
@@ -47,9 +53,6 @@ But giving up on his passion
 Has withered his body
 And ashed his spirit.
 ```
-````
-
-`````
 
 > {{ more }}
 >
@@ -61,9 +64,6 @@ And ashed his spirit.
 
 <!-- 广州 2024-10-08 -->
 
-`````{tab-set}
-
-````{tab-item} {{ zh }}
 ```{line-block}
 他有一块太阳能电池，
 里面蓄满了阳春三月的晨光、
@@ -77,9 +77,9 @@ And ashed his spirit.
 振聋发聩的音量
 和打败绝望的力量。
 ```
-````
 
-````{tab-item} {{ en }}
+---
+
 ```{line-block}
 He has a solar cell,
 In which stores up the dawn of spring,
@@ -93,9 +93,6 @@ The weight to crush barriers,
 The sound to awaken strayers,
 And the power to defeat despairs.
 ```
-````
-
-`````
 
 > {{ more }}
 >
@@ -107,9 +104,6 @@ And the power to defeat despairs.
 
 <!-- 广州 2024-11-02 -->
 
-`````{tab-set}
-
-````{tab-item} {{ zh }}
 ```{line-block}
 有的纸记载着往圣绝学[^wisdom]，
 本该引得洛阳纸贵，
@@ -135,9 +129,9 @@ And the power to defeat despairs.
 ```
 
 [^wisdom]: “往圣绝学”出自【北宋】张载《[横渠四句](https://hanyu.baidu.com/shici/detail?pid=304896ec1a1799aa53623a9f93e4543e)》。
-````
 
-````{tab-item} {{ en }}
+---
+
 ```{line-block}
 Some paper preserves the greatest minds' wisdom,
 Which should've been overwhelmingly popular,
@@ -161,9 +155,6 @@ Has the same number of annual rings,
 And embraces the same night breeze,
 While ends up in the hands of different humans.
 ```
-````
-
-`````
 
 > {{ more }}
 >
@@ -175,9 +166,6 @@ While ends up in the hands of different humans.
 
 <!-- 广州 2024-11-25 -->
 
-`````{tab-set}
-
-````{tab-item} {{ zh }}
 ```{line-block}
 寺院的菩提树上
 飘满红色的愿望，
@@ -194,9 +182,9 @@ While ends up in the hands of different humans.
 虔诚地相信他的愿望，
 相信自己的梦自己造。
 ```
-````
 
-````{tab-item} {{ en }}
+---
+
 ```{line-block}
 On the Bodhi Tree in the temple
 Fluttered hundreds of red wishes.
@@ -213,9 +201,6 @@ He made a wish devoutly as last year,
 Which he truly believes,
 And only himself can realize.
 ```
-````
-
-`````
 
 > {{ more }}
 >

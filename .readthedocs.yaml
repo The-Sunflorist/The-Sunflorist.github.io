@@ -10,13 +10,13 @@ build:
     pre_build:
       - rm -rf _readthedocs/
     post_build:
-      - python src/refiner.py
+      - python source/_pythons/refiner.py
 python:
   install:
-    - requirements: requirements.txt
+    - requirements: source/requirements.txt
 
 sphinx:
-  configuration: conf.py
+  configuration: source/conf.py
   fail_on_warning: true
 
 # formats:

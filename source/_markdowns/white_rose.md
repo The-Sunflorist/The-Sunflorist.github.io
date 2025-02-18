@@ -1,3 +1,12 @@
+---
+myst:
+  html_meta:
+    "description lang=zh-CN": "因为喜欢，所以种向日葵。"
+    "description lang=en": "He grows sunflowers out of passion."
+    "keywords lang=zh-CN": "诗歌, 玫瑰, 爱情, 婚姻, 恋爱"
+    "keywords lang=en": "poem, rose, love, marriage, relationship"
+---
+
 <!-- Created by 向阳花花农 (The Sunflorist) on 2024-11-22. -->
 <!-- The Sunflorist's Shangri-La © 2024 by The Sunflorist is licensed under CC BY-NC-SA 4.0, all rights reserved. -->
 
@@ -7,7 +16,7 @@
 
 阳光每天都会照耀向阳花花农的花海，花海里生长着一种稀有的玫瑰，玫瑰一生只开一朵花，一朵花的花期长达一千年，一千年之后只留下一粒种子，种子在真诚的土壤中才会再次抽出嫩芽，嫩芽变强壮离不开温存的阳光，阳光每天都会照耀向阳花花农的花海……
 
-![Heart](../_images/heart.png)
+![Heart](/_images/heart.png)
 
 ## 我也爱你！
 
@@ -15,9 +24,6 @@
 
 <!-- 广州 2024-10-23 -->
 
-`````{tab-set}
-
-````{tab-item} {{ zh }}
 ```{line-block}
 第一次，
 我正忘乎所以地谈天说地，
@@ -40,9 +46,9 @@
 你叮嘱我要照顾好自己。
 而我说：“我也爱你！”
 ```
-````
 
-````{tab-item} {{ en }}
+---
+
 ```{line-block}
 At the very first time,
 I was talking a lot with enthusiasm,
@@ -65,9 +71,6 @@ I kissed your wrinkled forehead,
 When you told me not to be sad.
 And I said, "I love you, too!"
 ```
-````
-
-`````
 
 > {{ more }}
 >
@@ -79,9 +82,6 @@ And I said, "I love you, too!"
 
 <!-- 广州 2024-10-25 -->
 
-`````{tab-set}
-
-````{tab-item} {{ zh }}
 ```{line-block}
 当我们三十多岁，
 在周六晚上，我们相互依偎，
@@ -120,9 +120,9 @@ And I said, "I love you, too!"
 ```
 
 [^slow]: “就像从前，车、马、邮件都慢”出自木心的诗歌《[从前慢](https://baike.baidu.com/item/从前慢/17158480)》第三小节。
-````
 
-````{tab-item} {{ en }}
+---
+
 ```{line-block}
 In our thirties,
 We snuggled up to each other on Saturday nights,
@@ -159,9 +159,6 @@ The end of our fairy tale was engraved on our wrinkles:
 We've enjoyed the happiest ever life,
 Which we've been sharing since our twenties.
 ```
-````
-
-`````
 
 > {{ more }}
 >
